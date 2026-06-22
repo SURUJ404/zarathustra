@@ -25,6 +25,11 @@ jobs:
           node-version: 20
       - name: Deploy to Vercel
         run: |
+          mkdir -p zarathustra/web/.vercel
+          printf '{"orgId":"%s","projectId":"%s"}\n' \
+            "${{ secrets.ORGID }}" \
+            "prj_VhbnkUsDgGsmsqOLMJ3EpN4T0Cqv" \
+            > zarathustra/web/.vercel/project.json
           npx --yes vercel@latest deploy --prod \
             --token="${{ secrets.ZARATOKEN }}" \
             --scope=${{ secrets.ORGID }} \
