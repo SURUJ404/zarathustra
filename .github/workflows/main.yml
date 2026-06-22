@@ -68,14 +68,7 @@ jobs:
     if: needs.changes.outputs.test == 'true'
     needs: changes
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - os: ubuntu-latest
-            feature: default
     env:
-      FEATURE: ${{ matrix.feature }}
       RUST_BACKTRACE: full
     steps:
       - uses: actions/checkout@v4
@@ -85,7 +78,7 @@ jobs:
       - uses: ./.github/actions/rustup
       - uses: ./.github/actions/sccache
       - name: Run tests
-        run: cargo test --workspace -F $FEATURE
+        run: cargo test --workspace
 
   clippy:
     if: needs.changes.outputs.zarathustra == 'true'
