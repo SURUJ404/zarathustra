@@ -55,7 +55,7 @@ pub enum FlatEmbed {
 }
 
 impl FlatEmbed {
-    pub fn signature(&self) -> UnresolvedSignature {
+    pub fn signature(&self) -> UnresolvedSignature<'_> {
         match self {
             FlatEmbed::FieldToBoolUnsafe => UnresolvedSignature::new()
                 .inputs(vec![UnresolvedType::FieldElement.into()])

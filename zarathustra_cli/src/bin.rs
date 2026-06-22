@@ -87,7 +87,7 @@ fn cli() -> Result<(), String> {
     }
 }
 
-fn panic_hook(pi: &std::panic::PanicInfo) {
+fn panic_hook(pi: &std::panic::PanicHookInfo) {
     println!("The compiler unexpectedly panicked");
     println!("{}", pi);
 

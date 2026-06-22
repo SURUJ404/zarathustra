@@ -932,43 +932,43 @@ impl<'ast, T: Field> TypedExpression<'ast, T> {
 }
 
 impl<'ast, T> From<BooleanExpression<'ast, T>> for TypedExpression<'ast, T> {
-    fn from(e: BooleanExpression<'ast, T>) -> TypedExpression<T> {
+    fn from(e: BooleanExpression<'ast, T>) -> TypedExpression<'ast, T> {
         TypedExpression::Boolean(e)
     }
 }
 
 impl<'ast, T> From<FieldElementExpression<'ast, T>> for TypedExpression<'ast, T> {
-    fn from(e: FieldElementExpression<'ast, T>) -> TypedExpression<T> {
+    fn from(e: FieldElementExpression<'ast, T>) -> TypedExpression<'ast, T> {
         TypedExpression::FieldElement(e)
     }
 }
 
 impl<'ast, T> From<IntExpression<'ast, T>> for TypedExpression<'ast, T> {
-    fn from(e: IntExpression<'ast, T>) -> TypedExpression<T> {
+    fn from(e: IntExpression<'ast, T>) -> TypedExpression<'ast, T> {
         TypedExpression::Int(e)
     }
 }
 
 impl<'ast, T> From<UExpression<'ast, T>> for TypedExpression<'ast, T> {
-    fn from(e: UExpression<'ast, T>) -> TypedExpression<T> {
+    fn from(e: UExpression<'ast, T>) -> TypedExpression<'ast, T> {
         TypedExpression::Uint(e)
     }
 }
 
 impl<'ast, T> From<ArrayExpression<'ast, T>> for TypedExpression<'ast, T> {
-    fn from(e: ArrayExpression<'ast, T>) -> TypedExpression<T> {
+    fn from(e: ArrayExpression<'ast, T>) -> TypedExpression<'ast, T> {
         TypedExpression::Array(e)
     }
 }
 
 impl<'ast, T> From<TupleExpression<'ast, T>> for TypedExpression<'ast, T> {
-    fn from(e: TupleExpression<'ast, T>) -> TypedExpression<T> {
+    fn from(e: TupleExpression<'ast, T>) -> TypedExpression<'ast, T> {
         TypedExpression::Tuple(e)
     }
 }
 
 impl<'ast, T> From<StructExpression<'ast, T>> for TypedExpression<'ast, T> {
-    fn from(e: StructExpression<'ast, T>) -> TypedExpression<T> {
+    fn from(e: StructExpression<'ast, T>) -> TypedExpression<'ast, T> {
         TypedExpression::Struct(e)
     }
 }

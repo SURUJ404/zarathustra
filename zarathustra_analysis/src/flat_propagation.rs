@@ -12,6 +12,7 @@ use zarathustra_ast::flat::folder::*;
 use zarathustra_ast::flat::*;
 use zarathustra_field::Field;
 
+#[allow(dead_code)]
 #[derive(Default)]
 struct Propagator<T> {
     constants: HashMap<Variable, T>,

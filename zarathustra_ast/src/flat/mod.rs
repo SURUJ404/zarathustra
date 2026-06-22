@@ -250,7 +250,7 @@ impl<'ast, T: Field> FlatStatement<'ast, T> {
     pub fn apply_substitution(
         self,
         substitution: &'ast HashMap<Variable, Variable>,
-    ) -> FlatStatement<T> {
+    ) -> FlatStatement<'ast, T> {
         match self {
             FlatStatement::Definition(s) => FlatStatement::definition(
                 *s.assignee.apply_substitution(substitution),

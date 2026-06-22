@@ -20,7 +20,7 @@ impl<T: Field> QuadComb<T> {
 
 pub fn from_flat<'ast, T: Field, I: IntoIterator<Item = FlatStatement<'ast, T>>>(
     flat_prog_iterator: FlatProgIterator<'ast, T, I>,
-) -> ProgIterator<T, impl IntoIterator<Item = Statement<'ast, T>>> {
+) -> ProgIterator<'ast, T, impl IntoIterator<Item = Statement<'ast, T>>> {
     ProgIterator {
         statements: flat_prog_iterator.statements.into_iter().map(Into::into),
         arguments: flat_prog_iterator.arguments,

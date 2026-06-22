@@ -156,7 +156,7 @@ impl<'ast> Identifier<'ast> {
 
 // these two From implementations are only used in tests but somehow cfg(test) doesn't work
 impl<'ast> From<&'ast str> for CoreIdentifier<'ast> {
-    fn from(s: &str) -> CoreIdentifier {
+    fn from(s: &str) -> CoreIdentifier<'_> {
         CoreIdentifier::Source(ShadowedIdentifier::shadow(std::borrow::Cow::Borrowed(s), 0))
     }
 }

@@ -621,19 +621,19 @@ impl<'ast, T> WithSpan for ZirExpression<'ast, T> {
 }
 
 impl<'ast, T: Field> From<BooleanExpression<'ast, T>> for ZirExpression<'ast, T> {
-    fn from(e: BooleanExpression<'ast, T>) -> ZirExpression<T> {
+    fn from(e: BooleanExpression<'ast, T>) -> ZirExpression<'ast, T> {
         ZirExpression::Boolean(e)
     }
 }
 
 impl<'ast, T: Field> From<FieldElementExpression<'ast, T>> for ZirExpression<'ast, T> {
-    fn from(e: FieldElementExpression<'ast, T>) -> ZirExpression<T> {
+    fn from(e: FieldElementExpression<'ast, T>) -> ZirExpression<'ast, T> {
         ZirExpression::FieldElement(e)
     }
 }
 
 impl<'ast, T: Field> From<UExpression<'ast, T>> for ZirExpression<'ast, T> {
-    fn from(e: UExpression<'ast, T>) -> ZirExpression<T> {
+    fn from(e: UExpression<'ast, T>) -> ZirExpression<'ast, T> {
         ZirExpression::Uint(e)
     }
 }

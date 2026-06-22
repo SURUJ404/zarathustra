@@ -43,7 +43,7 @@ jobs:
           targets: ${{ matrix.target }}
       - name: Build release binaries
         run: |
-          cargo build --release --locked --target ${{ matrix.target }}
+          cargo build --release --locked --package zarathustra_cli --target ${{ matrix.target }}
           mkdir -p tmp/pkg
           if [ -f "target/${{ matrix.target }}/release/zarathustra.exe" ]; then
             cp target/${{ matrix.target }}/release/zarathustra.exe tmp/pkg/

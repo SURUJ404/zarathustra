@@ -617,7 +617,7 @@ impl<S> GStructType<S> {
         self.members.len()
     }
 
-    pub fn iter(&self) -> std::slice::Iter<GStructMember<S>> {
+    pub fn iter(&self) -> std::slice::Iter<'_, GStructMember<S>> {
         self.members.iter()
     }
 
