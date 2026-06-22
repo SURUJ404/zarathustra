@@ -18,9 +18,6 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: production
-      url: ${{ steps.vercel.outputs.url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -36,7 +33,7 @@ jobs:
             > zarathustra/web/.vercel/project.json
           cd zarathustra/web
           npx --yes vercel@latest deploy --prod \
-            --token=${{ secrets.ZARATOKEN }} \
+            --token="${{ secrets.ZARATOKEN }}" \
             --scope=${{ secrets.ORGID }} \
             --yes > ../vercel-url.txt
           cd ..
