@@ -31,7 +31,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssemblyConstraint": {
-                "file": "tests/tests/assembly/binary_check.zok",
+                "file": "tests/tests/assembly/binary_check.zara",
                 "position": {
                   "line": 3,
                   "col": 9

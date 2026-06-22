@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/panics/conditional_panic.zok",
+  "entry_point": "./tests/tests/panics/conditional_panic.zara",
   "curves": ["Bn128"],
   "tests": [
     {
@@ -13,7 +13,7 @@
             "right": "0",
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/panics/conditional_panic.zok",
+                "file": "./tests/tests/panics/conditional_panic.zara",
                 "position": {
                   "line": 7,
                   "col": 5
@@ -35,7 +35,7 @@
             "right": "0",
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/panics/conditional_panic.zok",
+                "file": "./tests/tests/panics/conditional_panic.zara",
                 "position": {
                   "line": 2,
                   "col": 5

@@ -9,7 +9,7 @@ const initialize = async () => {
     compile: (source, compileOptions = {}) => {
       var {
         curve = "bn128",
-        location = "main.zok",
+        location = "main.zara",
         resolveCallback = () => null,
         config = {},
         snarkjs = false,

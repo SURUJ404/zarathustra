@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/panics/conditional_bound_throw.zok",
+  "entry_point": "./tests/tests/panics/conditional_bound_throw.zara",
   "curves": ["Bn128"],
   "tests": [
     {
@@ -13,7 +13,7 @@
             "right": "1",
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/panics/conditional_bound_throw.zok",
+                "file": "./tests/tests/panics/conditional_bound_throw.zara",
                 "position": {
                   "line": 2,
                   "col": 5
@@ -35,7 +35,7 @@
             "right": "0",
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/panics/conditional_bound_throw.zok",
+                "file": "./tests/tests/panics/conditional_bound_throw.zara",
                 "position": {
                   "line": 2,
                   "col": 5
@@ -57,7 +57,7 @@
             "right": "0",
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/panics/conditional_bound_throw.zok",
+                "file": "./tests/tests/panics/conditional_bound_throw.zara",
                 "position": {
                   "line": 2,
                   "col": 5

@@ -1193,8 +1193,8 @@ mod tests {
         use glob::glob;
         use std::fs;
         use std::io::Read;
-        // Traverse all .zok files in examples dir
-        for entry in glob("../zarathustra_cli/examples/**/*.zok").expect("Failed to read glob pattern")
+        // Traverse all .zara files in examples dir
+        for entry in glob("../zarathustra_cli/examples/**/*.zara").expect("Failed to read glob pattern")
         {
             match entry {
                 Ok(path) => {

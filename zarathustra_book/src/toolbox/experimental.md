@@ -19,13 +19,13 @@ Then, using Nova lets the user prove many steps of this program, given an initia
 For example:
 
 ```
-{{#include ../../../zarathustra_cli/examples/book/nova_step.zok}}
+{{#include ../../../zarathustra_cli/examples/book/nova_step.zara}}
 ```
 
 We compile this program using the Pallas curve:
 
 ```bash
-zarathustra compile -i sum.zok --curve pallas
+zarathustra compile -i sum.zara --curve pallas
 ```
 
 Then we can prove three iterations as follows:

@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/structs/member_order.zok",
+  "entry_point": "./tests/tests/structs/member_order.zara",
   "curves": ["Bn128"],
   "tests": [
     {

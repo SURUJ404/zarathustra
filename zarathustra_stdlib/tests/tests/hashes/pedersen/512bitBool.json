@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/hashes/pedersen/512bitBool.zok",
+  "entry_point": "./tests/tests/hashes/pedersen/512bitBool.zara",
   "curves": ["Bn128"],
   "tests": [
     {

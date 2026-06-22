@@ -7,23 +7,23 @@ the return type must be specified after an arrow `->`.
 A function has to be declared at the top level before it is called.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/function_declaration.zok}}
+{{#include ../../../zarathustra_cli/examples/book/function_declaration.zara}}
 ```
 
 A function can be generic over any number of values of type `u32`.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/generic_function_declaration.zok}}
+{{#include ../../../zarathustra_cli/examples/book/generic_function_declaration.zara}}
 ```
 
 The generic parameters can be provided explicitly, especially when they cannot be inferred.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/explicit_generic_parameters.zok}}
+{{#include ../../../zarathustra_cli/examples/book/explicit_generic_parameters.zara}}
 ```
 
 If the return type of a function is the empty tuple `()`, the return type as well as the return statement can be omitted.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/no_return.zok}}
+{{#include ../../../zarathustra_cli/examples/book/no_return.zara}}
 ```

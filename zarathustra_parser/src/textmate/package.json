@@ -20,7 +20,7 @@
           "zarathustra"
         ],
         "extensions": [
-          ".zok"
+          ".zara"
         ],
         "configuration": "./language-configuration.json"
       }
@@ -28,7 +28,7 @@
     "grammars": [
       {
         "language": "zarathustra",
-        "scopeName": "source.zok",
+        "scopeName": "source.zara",
         "path": "./syntaxes/zarathustra.tmLanguage.json"
       }
     ]

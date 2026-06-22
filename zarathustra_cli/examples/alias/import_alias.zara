@@ -1,5 +1,5 @@
-from "./basic_aliasing.zok" import matrix;
-from "./struct_aliasing.zok" import Buzz;
+from "./basic_aliasing.zara" import matrix;
+from "./struct_aliasing.zara" import Buzz;
 
 const u32 R = 2;
 const u32 C = 4;

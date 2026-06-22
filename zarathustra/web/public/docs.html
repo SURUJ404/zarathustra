@@ -319,7 +319,7 @@ footer a { color: var(--accent); text-decoration: none; }
         <p>Compiles a <code>.zarathustra</code> source file into a flattened R1CS constraint system. The output binary (<code>out</code>) is used by all subsequent commands.</p>
 
         <h4>Usage</h4>
-        <pre><span class="prompt">$</span> zarathustra compile -i program.zok [--curve bn128]</pre>
+        <pre><span class="prompt">$</span> zarathustra compile -i program.zara [--curve bn128]</pre>
 
         <h4>Options</h4>
         <ul>
@@ -329,7 +329,7 @@ footer a { color: var(--accent); text-decoration: none; }
 
         <h4>Example</h4>
         <pre><span class="comment"># Compile for the BN128 curve (Ethereum)</span>
-<span class="prompt">$</span> zarathustra compile -i program.zok --curve bn128
+<span class="prompt">$</span> zarathustra compile -i program.zara --curve bn128
 <span class="output">Compiled code written to 'out'
 Number of constraints: 2</span></pre>
     </div>
@@ -373,7 +373,7 @@ Private In:   1</span></pre>
         <p>Checks a <code>.zarathustra</code> source file for syntax and type errors without performing a full compilation. Useful for quick iteration.</p>
 
         <h4>Usage</h4>
-        <pre><span class="prompt">$</span> zarathustra check -i program.zok</pre>
+        <pre><span class="prompt">$</span> zarathustra check -i program.zara</pre>
 
         <h4>Options</h4>
         <ul>
@@ -381,7 +381,7 @@ Private In:   1</span></pre>
         </ul>
 
         <h4>Example</h4>
-        <pre><span class="prompt">$</span> zarathustra check -i program.zok
+        <pre><span class="prompt">$</span> zarathustra check -i program.zara
 <span class="output"><span class="ok">OK</span></span></pre>
     </div>
 </div>
@@ -681,7 +681,7 @@ Public inputs: [42]</span></pre>
 <div style="background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 48px;">
     <h4 style="font-size: 14px; font-weight: 600; margin-bottom: 12px; color: var(--accent);">Full Pipeline — One Shot</h4>
     <pre>
-<span class="prompt">$</span> zarathustra compile -i program.zok --curve bn128
+<span class="prompt">$</span> zarathustra compile -i program.zara --curve bn128
 <span class="prompt">$</span> zarathustra setup -i out
 <span class="prompt">$</span> zarathustra compute-witness -i out --abi -s abi.json --stdin &lt;&lt;&lt; '["42"]'
 <span class="prompt">$</span> zarathustra generate-proof -i out -w witness -p proving.key

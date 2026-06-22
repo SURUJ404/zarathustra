@@ -5,7 +5,7 @@ In order to interact programmatically with compiled Zarathustra programs, Zarath
 To illustrate this, we'll use the following example program:
 
 ```
-{{#include ../../../zarathustra_cli/examples/book/abi.zok}}
+{{#include ../../../zarathustra_cli/examples/book/abi.zara}}
 ```
 
 ## ABI specification

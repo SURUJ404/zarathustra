@@ -13,7 +13,7 @@ As an example, `p` is set to `21888242871839275222246405745257275088548364400416
 While `field` values mostly behave like unsigned integers, one should keep in mind that they overflow at `p` and not some power of 2, so that we have:
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/field_overflow.zok}}
+{{#include ../../../zarathustra_cli/examples/book/field_overflow.zara}}
 ```
 
 Note that [division in the finite field](https://en.wikipedia.org/wiki/Finite_field_arithmetic) behaves differently than in the case of integers.
@@ -40,7 +40,7 @@ In the case of decimal literals like `42`, the compiler tries to find the approp
 All operations between literals have the semantics of the inferred type.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/numeric_inference.zok}}
+{{#include ../../../zarathustra_cli/examples/book/numeric_inference.zara}}
 ```
 
 ## Complex Types
@@ -55,7 +55,7 @@ Arrays can contain elements of any type and have arbitrary dimensions.
 The following example code shows examples of how to use arrays:
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/array.zok}}
+{{#include ../../../zarathustra_cli/examples/book/array.zara}}
 ```
 
 #### Declaration and Initialization
@@ -85,7 +85,7 @@ In summary, this leads to the following scheme for array declarations:
 Consider the following example:
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/multidim_array.zok}}
+{{#include ../../../zarathustra_cli/examples/book/multidim_array.zara}}
 ```
 
 #### Spreads and Slices
@@ -112,7 +112,7 @@ A tuple is a composite datatype representing a numbered collection of values.
 The following code shows an example of how to use tuples.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/tuples.zok}}
+{{#include ../../../zarathustra_cli/examples/book/tuples.zara}}
 ```
 
 In tuple types and values, the trailing comma is optional, unless the tuple contains a single element, in which case it is mandatory.
@@ -123,7 +123,7 @@ A struct is a composite datatype representing a named collection of values. Stru
 The following code shows an example of how to use structs.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/structs.zok}}
+{{#include ../../../zarathustra_cli/examples/book/structs.zara}}
 ```
 
 #### Definition
@@ -146,14 +146,14 @@ Initialization of a variable of a struct type always needs to happen in the same
 The following example shows declaration and initialization of a variable of the `Point` struct type:
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/struct_init.zok}}
+{{#include ../../../zarathustra_cli/examples/book/struct_init.zara}}
 ```
 
 #### Assignment
 The variables within a struct instance, the so called members, can be accessed through the `.` operator as shown in the following extended example:
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/struct_assign.zok}}
+{{#include ../../../zarathustra_cli/examples/book/struct_assign.zara}}
 ```
 
 ### Type aliases
@@ -163,5 +163,5 @@ Type aliases can be defined for any existing type. This can be useful for readab
 Note that type aliases are just syntactic sugar: in the type system, a type and its alias are exactly equivalent. For example, they can be compared.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/type_aliases.zok}}
+{{#include ../../../zarathustra_cli/examples/book/type_aliases.zara}}
 ```

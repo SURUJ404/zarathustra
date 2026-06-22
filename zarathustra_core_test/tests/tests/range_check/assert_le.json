@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/range_check/assert_le.zok",
+  "entry_point": "./tests/tests/range_check/assert_le.zara",
   "max_constraint_count": 763,
   "curves": ["Bn128"],
   "tests": [
@@ -48,7 +48,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/range_check/assert_le.zok",
+                "file": "./tests/tests/range_check/assert_le.zara",
                 "position": {
                   "line": 2,
                   "col": 5

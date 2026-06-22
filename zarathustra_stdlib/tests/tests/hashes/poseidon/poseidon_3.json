@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/hashes/poseidon/poseidon_3.zok",
+  "entry_point": "./tests/tests/hashes/poseidon/poseidon_3.zara",
   "tests": [
     {
       "input": {

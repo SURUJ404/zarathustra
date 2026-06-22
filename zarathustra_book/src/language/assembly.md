@@ -13,15 +13,15 @@ All constraints must be enclosed within an `asm` block. In an assembly block we 
 
 Assigning a value, in general, should be combined with adding a constraint:
 
-```zok
-{{#include ../../../zarathustra_cli/examples/book/assembly/division.zok}}
+```zara
+{{#include ../../../zarathustra_cli/examples/book/assembly/division.zara}}
 ```
 
 > Note that operator `<--` is used for unconstrained assignment and can be easily misused. This operator does not generate constraints, which could result in unconstrained variables in the constraint system.
 
 Unconstrained assignment `<--` allows assignment to variables with complex types. The type must consist of field elements only (eg. `field[3]`):
 
-```zok
+```zara
 field[3] mut c = [0; 3];
 asm {
     c <-- [2, 2, 4];
@@ -31,7 +31,7 @@ asm {
 
 In some cases we can combine the witness assignment and constraint generation with the `<==` operator (constrained assignment):
 
-```zok
+```zara
 asm {
     c <== 1 - a*b;
 }
@@ -39,7 +39,7 @@ asm {
 
 which is equivalent to:
 
-```zok
+```zara
 asm {
     c <-- 1 - a*b;
     c === 1 - a*b;
@@ -52,7 +52,7 @@ A constraint can contain arithmetic expressions that are built using multiplicat
 
 The following code is not allowed:
 
-```zok
+```zara
 asm {
     d === a*b*c;
 }
@@ -62,7 +62,7 @@ as the constraint `d === a*b*c` is not quadratic.
 
 In some cases, Zarathustra will apply minor transformations on the defined constraints in order to meet the correct format:
 
-```zok
+```zara
 asm {
     x * (x - 1) === 0;
 }
@@ -70,7 +70,7 @@ asm {
 
 will be transformed to:
 
-```zok
+```zara
 asm {
     x === x * x;
 }
@@ -84,6 +84,6 @@ Assembly is a low-level part of the compiler which does not have type safety. In
 
 This call is unsafe because it is the responsibility of the user to constrain the field input:
 
-```zok
-{{#include ../../../zarathustra_cli/examples/book/assembly/field_to_bool.zok}}
+```zara
+{{#include ../../../zarathustra_cli/examples/book/assembly/field_to_bool.zara}}
 ```

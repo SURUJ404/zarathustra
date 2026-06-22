@@ -21,7 +21,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssemblyConstraint": {
-                "file": "tests/tests/assembly/constraint.zok",
+                "file": "tests/tests/assembly/constraint.zara",
                 "position": {
                   "line": 3,
                   "col": 9

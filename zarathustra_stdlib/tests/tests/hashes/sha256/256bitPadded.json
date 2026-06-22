@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/hashes/sha256/256bitPadded.zok",
+  "entry_point": "./tests/tests/hashes/sha256/256bitPadded.zara",
   "curves": ["Bn128"],
   "tests": [
     {

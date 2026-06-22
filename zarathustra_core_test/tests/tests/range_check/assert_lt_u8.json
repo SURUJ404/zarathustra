@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/range_check/assert_lt_u8.zok",
+  "entry_point": "./tests/tests/range_check/assert_lt_u8.zara",
   "max_constraint_count": 29,
   "curves": ["Bn128"],
   "tests": [
@@ -22,7 +22,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/range_check/assert_lt_u8.zok",
+                "file": "./tests/tests/range_check/assert_lt_u8.zara",
                 "position": {
                   "line": 2,
                   "col": 5
@@ -42,7 +42,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/range_check/assert_lt_u8.zok",
+                "file": "./tests/tests/range_check/assert_lt_u8.zara",
                 "position": {
                   "line": 2,
                   "col": 5

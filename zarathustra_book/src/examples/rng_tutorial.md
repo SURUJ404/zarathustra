@@ -24,9 +24,9 @@ In this tutorial you learn how to use Zarathustra and zero knowledge proofs to r
 The first step is for Alice and Bob to each come up with a preimage value and calculate the hash to commit to it. 
 There are many ways to calculate a hash, but here we use Zarathustra. 
 
-Create this file under the name `get_hash.zok`:
+Create this file under the name `get_hash.zara`:
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zok}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zara}}
 ```
 
 Compile the program to a form that is usable for zero knowledge proofs. This command writes 
@@ -57,10 +57,10 @@ Pick your own value and store it somewhere.
 ### Detailed explanation
 This line imports a Zarathustra function from the [standard library](https://github.com/Zarathustra/Zarathustra/tree/latest/zarathustra_stdlib/stdlib). 
 You can see the specific function we are importing 
-[here](https://github.com/Zarathustra/Zarathustra/blob/latest/zarathustra_stdlib/stdlib/hashes/sha256/512bit.zok). It will be
+[here](https://github.com/Zarathustra/Zarathustra/blob/latest/zarathustra_stdlib/stdlib/hashes/sha256/512bit.zara). It will be
 called `sha256`.
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zok:1}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zara:1}}
 ```
 
 This is the main function. The input (`u32[16]`) is an array of sixteen values, each an unsigned 32-bit integer (a number 
@@ -70,23 +70,23 @@ line parameter. The total number of input bits is *32 &times; 16 = 512*.
 The output is `u32[8]`, a *32 &times; 8 = 256* bit value.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zok:3}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zara:3}}
 ```
 
 This line does several things. First, `u32[8] h` defines a variable called `h`, whose type is an array of eight 32-bit unsigned integers.
 This variable is initialized using `sha256`, the function we 
-[imported from the standard library](https://github.com/Zarathustra/Zarathustra/blob/latest/zarathustra_stdlib/stdlib/hashes/sha256/512bit.zok).
+[imported from the standard library](https://github.com/Zarathustra/Zarathustra/blob/latest/zarathustra_stdlib/stdlib/hashes/sha256/512bit.zara).
 The `sha256` function expects to get two arrays of eight values each, so we use a [slice `..`](https://zarathustra.github.io/language/types.html#slices)
 to divide `hashMe` into two arrays.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zok:4}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zara:4}}
 ```
 
 Finally, return `h` to the caller to display the hash.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zok:5}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/get_hash.zara:5}}
 ```
 
 
@@ -94,9 +94,9 @@ Finally, return `h` to the caller to display the hash.
 
 The next step is to reveal a single bit.
 
-Use this program, `reveal_bit.zok`:
+Use this program, `reveal_bit.zara`:
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zok}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zara}}
 ```
 
 Compile and run as you did the previous program:
@@ -119,7 +119,7 @@ There are cast functions to convert `u8`s, `u16`s, and `u32`s to boolean arrays 
 [you can see them here](https://github.com/Zarathustra/Zarathustra/blob/master/zarathustra_stdlib/stdlib/utils/casts).
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zok:2}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zara:2}}
 ```
 
 The preimage is declared `private` so it won't be revealed by the zero knowledge proof.
@@ -128,7 +128,7 @@ A Zarathustra function can return multiple values. In this case, it returns the 
 value of the bit being revealed.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zok:10}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zara:10}}
 ```
 
 To find the value of the bit being revealed, we convert the entire preimage into bits and access it at the index `bitNum`. 
@@ -138,39 +138,39 @@ copies of `<value>`. It is necessary to include it here because a Zarathustra va
 when it is declared.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zok:11:12}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zara:11:12}}
 ```
 
 This is a [for loop](https://zarathustra.github.io/language/control_flow.html#for-loops). For loops 
 have to have an index of type `u32`, and their bounds need to be known at compile time.
 In this case, we go over each of the sixteen 32 bit words.
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zok:13}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zara:13}}
 ```
 
 The function we imported, `u32_to_bits`, converts a `u32` value to an array of bits.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zok:14}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zara:14}}
 ```
 
 The inner loop copies the bits from `val` to `preimageBits`, the bit array for the preimage.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zok:15:18}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zara:15:18}}
 ```
 
 To return multiple values, separate them by commas. 
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zok:20}}
+{{#include ../../../zarathustra_cli/examples/book/rng_tutorial/reveal_bit.zara:20}}
 ```
 
 
 
 ## Actually using zero knowledge proofs
 
-The `reveal_bit.zok` program reveals a bit from the preimage, but who runs it?
+The `reveal_bit.zara` program reveals a bit from the preimage, but who runs it?
 
 1. If Alice runs the program, she can feed it her secret preimage and receive the correct result. However, when she sends the output there is no reason
    for Bob to trust that she is providing the correct output.
@@ -186,7 +186,7 @@ and the actions of Bob in the `bob` directory.
    
 ### Bob's setup stage
 
-Compile `reveal_bit.zok` and create the proving and verification keys.
+Compile `reveal_bit.zara` and create the proving and verification keys.
 ```
 {{#include ../../../zarathustra_cli/examples/book/rng_tutorial/test.sh:20:21}}
 ```
@@ -195,7 +195,7 @@ Copy the file `proving.key` to Alice's directory.
 
 ### Alice reveals a bit
 
-Alice should compile `reveal_bit.zok` independently to make sure it doesn't disclose information she wants to keep secret.
+Alice should compile `reveal_bit.zara` independently to make sure it doesn't disclose information she wants to keep secret.
 ```
 {{#include ../../../zarathustra_cli/examples/book/rng_tutorial/test.sh:27}}
 ```

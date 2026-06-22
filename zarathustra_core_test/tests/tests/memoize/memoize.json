@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/memoize/memoize.zok",
+  "entry_point": "./tests/tests/memoize/memoize.zara",
   "max_constraint_count": 32,
   "tests": [
     {

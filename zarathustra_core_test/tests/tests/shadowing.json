@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/shadowing.zok",
+  "entry_point": "./tests/tests/shadowing.zara",
   "tests": [
     {
       "input": {

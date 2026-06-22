@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/div.zok",
+  "entry_point": "./tests/tests/div.zara",
   "max_constraint_count": 3,
   "curves": ["Bn128", "Bls12_381", "Bls12_377", "Bw6_761"],
   "tests": [

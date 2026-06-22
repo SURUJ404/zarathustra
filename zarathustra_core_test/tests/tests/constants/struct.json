@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/constants/struct.zok",
+  "entry_point": "./tests/tests/constants/struct.zara",
   "max_constraint_count": 6,
   "tests": [
     {

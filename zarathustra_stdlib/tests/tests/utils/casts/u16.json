@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/utils/casts/u16.zok",
+  "entry_point": "./tests/tests/utils/casts/u16.zara",
   "max_constraint_count": 0,
   "curves": ["Bn128"],
   "tests": [

@@ -8,7 +8,7 @@ function zarathustra() {
 }
 
 # compile the program
-zarathustra compile -i program.zok -o circuit
+zarathustra compile -i program.zara -o circuit
 
 # initialize the ceremony
 # this step requires phase1 files eg. phase1radix2m2 for circuits of 2^2 constraints

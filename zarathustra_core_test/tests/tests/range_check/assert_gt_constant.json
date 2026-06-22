@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/range_check/assert_gt_constant.zok",
+  "entry_point": "./tests/tests/range_check/assert_gt_constant.zara",
   "max_constraint_count": 508,
   "curves": ["Bn128"],
   "tests": [
@@ -12,7 +12,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/range_check/assert_gt_constant.zok",
+                "file": "./tests/tests/range_check/assert_gt_constant.zara",
                 "position": {
                   "line": 2,
                   "col": 5
@@ -32,7 +32,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/range_check/assert_gt_constant.zok",
+                "file": "./tests/tests/range_check/assert_gt_constant.zara",
                 "position": {
                   "line": 2,
                   "col": 5
@@ -52,7 +52,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/range_check/assert_gt_constant.zok",
+                "file": "./tests/tests/range_check/assert_gt_constant.zara",
                 "position": {
                   "line": 2,
                   "col": 5

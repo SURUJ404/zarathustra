@@ -186,7 +186,7 @@ mod tests {
         // const bool a = true;
         //
         // def main() -> bool {
-        //     return main.zok/a;
+        //     return main.zara/a;
         // }
 
         let const_id = CanonicalConstantIdentifier::new("a", "main".into());
@@ -480,7 +480,7 @@ mod tests {
         // ---------------------
         // module `foo`
         // --------------------
-        // const field BAR = ./foo.zok/FOO;
+        // const field BAR = ./foo.zara/FOO;
         //
         // def main() {
         //     return;
@@ -668,7 +668,7 @@ mod tests {
         // module `main`
         // ---------------------
         // const FOO = 2;
-        // const BAR = [1; ./foo.zok/FOO];
+        // const BAR = [1; ./foo.zara/FOO];
         // const field[FOO] BAZ = BAR;
         //
         // def main() -> field {

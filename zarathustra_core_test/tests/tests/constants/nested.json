@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/constants/nested.zok",
+  "entry_point": "./tests/tests/constants/nested.zara",
   "max_constraint_count": 1,
   "tests": [
     {

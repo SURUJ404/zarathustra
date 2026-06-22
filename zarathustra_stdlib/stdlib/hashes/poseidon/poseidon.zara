@@ -1,6 +1,6 @@
 // https://eprint.iacr.org/2019/458.pdf
 
-from "./constants.zok" import POSEIDON_C, POSEIDON_M;
+from "./constants.zara" import POSEIDON_C, POSEIDON_M;
 
 def ark<N>(field[N] mut state, field[497] c, u32 it) -> field[N] {
     for u32 i in 0..N {

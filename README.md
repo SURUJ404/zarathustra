@@ -17,7 +17,7 @@ Load the Zarathustra Plugin on [Remix](https://remix.ethereum.org) to write your
 Alternatively, you can install the Zarathustra CLI:
 
 ```bash
-curl -LSfs get.zokrat.es | sh
+curl -LSfs get.zararat.es | sh
 ```
 
 Have a look at the [documentation](https://zarathustra.github.io/) for more information about using Zarathustra.

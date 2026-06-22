@@ -321,7 +321,7 @@ describe("tests", () => {
   const testRunner = (rootPath, testPath, test) => {
     let entryPoint;
     if (!test.entry_point) {
-      entryPoint = testPath.replace(".json", ".zok");
+      entryPoint = testPath.replace(".json", ".zara");
     } else {
       entryPoint = path.join(rootPath, test.entry_point);
     }
@@ -338,7 +338,7 @@ describe("tests", () => {
       const location = path.format({
         ...parsedPath,
         base: "",
-        ext: ".zok",
+        ext: ".zara",
       });
       const source = fs.readFileSync(location).toString();
       return { source, location };

@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/constants/propagate.zok",
+  "entry_point": "./tests/tests/constants/propagate.zara",
   "max_constraint_count": 4,
   "tests": [
     {

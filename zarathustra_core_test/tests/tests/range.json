@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/range.zok",
+  "entry_point": "./tests/tests/range.zara",
   "curves": ["Bn128"],
   "tests": [
     {

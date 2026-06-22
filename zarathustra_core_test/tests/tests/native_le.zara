@@ -1,4 +1,4 @@
-from "utils/pack/bool/unpack.zok" import main as unpack;
+from "utils/pack/bool/unpack.zara" import main as unpack;
 from "utils/casts/u32_to_bits" import main as u32_to_bits;
 from "field" import FIELD_MAX, FIELD_SIZE_IN_BITS;
 

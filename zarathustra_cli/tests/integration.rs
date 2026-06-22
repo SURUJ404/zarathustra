@@ -161,7 +161,7 @@ mod integration {
             if path.extension().unwrap() == "witness" {
                 let program_name =
                     Path::new(Path::new(path.file_stem().unwrap()).file_stem().unwrap());
-                let prog = dir.join(program_name).with_extension("zok");
+                let prog = dir.join(program_name).with_extension("zara");
                 let witness = dir
                     .join(program_name)
                     .with_extension("expected.witness.json");
@@ -662,7 +662,7 @@ mod integration {
             let path = entry.path();
             if path.extension().unwrap() == "smt2" {
                 let program_name = Path::new(path.file_stem().unwrap());
-                let prog = dir.join(program_name).with_extension("zok");
+                let prog = dir.join(program_name).with_extension("zara");
                 test_compile_and_smtlib2(program_name.to_str().unwrap(), &prog, &path);
             }
         }

@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/constants/mixed.zok",
+  "entry_point": "./tests/tests/constants/mixed.zara",
   "max_constraint_count": 6,
   "tests": [
     {

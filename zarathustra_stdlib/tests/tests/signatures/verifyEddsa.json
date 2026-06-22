@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/signatures/verifyEddsa.zok",
+  "entry_point": "./tests/tests/signatures/verifyEddsa.zara",
   "curves": ["Bn128"],
   "tests": [
     {

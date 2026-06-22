@@ -11,13 +11,13 @@ Arguments are passed by value.
 Function parameters can be declared as mutable to allow for mutation within the function's body. However, mutable function arguments are still passed by value, so the original value can never be mutated.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/side_effects.zok}}
+{{#include ../../../zarathustra_cli/examples/book/side_effects.zara}}
 ```
 
 Generic parameters, if any, must be compile-time constants. They are inferred by the compiler if that is possible, but can also be provided explicitly.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/generic_call.zok}}
+{{#include ../../../zarathustra_cli/examples/book/generic_call.zara}}
 ```
 
 ### Conditional expressions
@@ -25,13 +25,13 @@ Generic parameters, if any, must be compile-time constants. They are inferred by
 A conditional expression allows you to branch your code depending on a boolean condition.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/conditional.zok}}
+{{#include ../../../zarathustra_cli/examples/book/conditional.zara}}
 ```
 
 The conditional expression can also be written using a ternary operator:
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/conditional_ternary.zok}}
+{{#include ../../../zarathustra_cli/examples/book/conditional_ternary.zara}}
 ```
 
 There are two important caveats when it comes to conditional expressions. Before we go into them, let's define two concepts:
@@ -41,11 +41,11 @@ There are two important caveats when it comes to conditional expressions. Before
 Now the two caveats:
 - **Both branches are always executed**. No short-circuiting happens based on the value of the condition. Therefore, the complexity of a program in terms of the number of constraints it compiles down to is the *sum* of the cost of all branches.
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/conditional_expensive.zok}}
+{{#include ../../../zarathustra_cli/examples/book/conditional_expensive.zara}}
 ```
 - **An unsatisfied constraint inside any branch will make the whole execution fail, even if this branch is not logically executed**. Also, the compiler itself inserts assertions which can fail. This can lead to unexpected results:
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/conditional_panic.zok}}
+{{#include ../../../zarathustra_cli/examples/book/conditional_panic.zara}}
 ```
 
 >The reason for these caveats is that the program is compiled down to an arithmetic circuit. This construct does not support jumping to a branch depending on a condition as you could do on traditional architectures. Instead, all branches are inlined as if they were printed on a circuit board.
@@ -55,7 +55,7 @@ Now the two caveats:
 For loops are available with the following syntax:
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/for.zok}}
+{{#include ../../../zarathustra_cli/examples/book/for.zara}}
 ```
 
 The bounds have to be constant at compile-time, therefore they cannot depend on execution inputs. They can depend on generic parameters.
@@ -68,7 +68,7 @@ The range is half-open, meaning it is bounded inclusively below and exclusively 
 Any boolean can be asserted to be true using the `assert` function.
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/assert.zok}}
+{{#include ../../../zarathustra_cli/examples/book/assert.zara}}
 ```
 
 If any assertion fails, execution stops as no valid proof could be generated from it.

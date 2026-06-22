@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/ecc/proofOfOwnership.zok",
+  "entry_point": "./tests/tests/ecc/proofOfOwnership.zara",
   "curves": ["Bn128"],
   "tests": [
     {

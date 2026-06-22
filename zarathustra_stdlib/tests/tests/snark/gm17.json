@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/snark/gm17.zok",
+  "entry_point": "./tests/tests/snark/gm17.zara",
   "curves": ["Bw6_761"],
   "tests": [
     {

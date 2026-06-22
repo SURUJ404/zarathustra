@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/utils/pack/bool/unpack256.zok",
+  "entry_point": "./tests/tests/utils/pack/bool/unpack256.zara",
   "curves": ["Bn128"],
   "tests": [
     {

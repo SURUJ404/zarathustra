@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/hashes/keccak/512bit.zok",
+  "entry_point": "./tests/tests/hashes/keccak/512bit.zara",
   "tests": [
     {
       "input": {

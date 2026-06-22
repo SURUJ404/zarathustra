@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/range_check/assert_le_big_constant.zok",
+  "entry_point": "./tests/tests/range_check/assert_le_big_constant.zara",
   "max_constraint_count": 508,
   "curves": ["Bn128"],
   "tests": [
@@ -48,7 +48,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssertion": {
-                "file": "./tests/tests/range_check/assert_le_big_constant.zok",
+                "file": "./tests/tests/range_check/assert_le_big_constant.zara",
                 "position": {
                   "line": 4,
                   "col": 5

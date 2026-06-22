@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/field.zok",
+  "entry_point": "./tests/tests/field.zara",
   "max_constraint_count": 3,
   "curves": ["Bn128"],
   "abi": false,

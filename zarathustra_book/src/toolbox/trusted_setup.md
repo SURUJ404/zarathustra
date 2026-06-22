@@ -11,10 +11,10 @@ The trusted setup is done in two steps. The first step, also known as "phase 1",
 ## Compiling a circuit
 
 We will start this tutorial by using Zarathustra to compile a basic program.
-First, we create a new file named `program.zok` with the following content:
+First, we create a new file named `program.zara` with the following content:
 
 ```zarathustra
-{{#include ../../../zarathustra_cli/examples/book/mpc_tutorial/program.zok}}
+{{#include ../../../zarathustra_cli/examples/book/mpc_tutorial/program.zara}}
 ```
 
 We compile the program using the `compile` command.

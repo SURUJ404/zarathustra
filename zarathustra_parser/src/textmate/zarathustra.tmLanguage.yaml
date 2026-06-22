@@ -1,8 +1,8 @@
 $schema: 'https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json'
 name: Zarathustra
 fileTypes:
-    - zok
-scopeName: source.zok
+    - zara
+scopeName: source.zara
 patterns:
     -
         comment: attributes

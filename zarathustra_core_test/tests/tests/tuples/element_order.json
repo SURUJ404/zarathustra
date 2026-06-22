@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/tuples/element_order.zok",
+  "entry_point": "./tests/tests/tuples/element_order.zara",
   "curves": ["Bn128"],
   "tests": [
     {

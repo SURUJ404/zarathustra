@@ -1,4 +1,4 @@
-from "utils/casts.zok" import cast;
+from "utils/casts.zara" import cast;
 
 // bool[8]  -> u8
 // bool[N]  -> u8[P]

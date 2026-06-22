@@ -10,7 +10,7 @@
 //
 // 2. Compile it to bls12_377 
 // ```sh
-// zarathustra compile -i program.zok --curve bls12_377
+// zarathustra compile -i program.zara --curve bls12_377
 // ```
 //
 // 3. Run a trusted setup for gm17
@@ -29,7 +29,7 @@
 // ```sh
 // cat > gm17.json << EOT
 // {
-//     "entry_point": "./tests/tests/snark/gm17.zok",
+//     "entry_point": "./tests/tests/snark/gm17.zara",
 //     "curves": ["Bw6_761"],
 //     "tests": [
 //         {

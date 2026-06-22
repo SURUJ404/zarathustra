@@ -50,7 +50,7 @@
           "UnsatisfiedConstraint": {
             "error": {
               "SourceAssemblyConstraint": {
-                "file": "tests/tests/assembly/bitify.zok",
+                "file": "tests/tests/assembly/bitify.zara",
                 "position": {
                   "line": 13,
                   "col": 9

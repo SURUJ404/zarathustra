@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/memoize/no_array_memoization.zok",
+  "entry_point": "./tests/tests/memoize/no_array_memoization.zara",
   "tests": [
     {
       "input": {

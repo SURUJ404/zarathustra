@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/ternary.zok",
+  "entry_point": "./tests/tests/ternary.zara",
   "max_constraint_count": 6,
   "tests": [
     {

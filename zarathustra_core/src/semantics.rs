@@ -3971,13 +3971,13 @@ mod tests {
 
         #[test]
         fn imported_function() {
-            // foo.zok
+            // foo.zara
             // def main() {
             //   return;
             // }
 
-            // bar.zok
-            // from "./foo.zok" import main;
+            // bar.zara
+            // from "./foo.zara" import main;
 
             // after semantic check, `bar` should import a checked function
 

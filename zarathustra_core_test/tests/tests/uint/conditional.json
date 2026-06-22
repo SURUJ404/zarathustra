@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/uint/conditional.zok",
+  "entry_point": "./tests/tests/uint/conditional.zara",
   "max_constraint_count": 31,
   "tests": [
     {

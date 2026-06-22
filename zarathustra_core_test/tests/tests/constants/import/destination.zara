@@ -1,4 +1,4 @@
-from "./origin.zok" import foo;
+from "./origin.zara" import foo;
 
 def main() {
     assert(foo([1, 1]));

@@ -149,7 +149,7 @@ impl<'a> Resolver<Error> for JsResolver<'a> {
             _ => PathBuf::default(),
         };
 
-        let path = base.join(import_location.clone()).with_extension("zok");
+        let path = base.join(import_location.clone()).with_extension("zara");
 
         match path.components().next() {
             Some(Component::Normal(_)) => {

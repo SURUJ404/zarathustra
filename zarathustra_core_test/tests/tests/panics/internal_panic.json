@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/panics/internal_panic.zok",
+  "entry_point": "./tests/tests/panics/internal_panic.zara",
   "curves": ["Bn128"],
   "tests": [
     {

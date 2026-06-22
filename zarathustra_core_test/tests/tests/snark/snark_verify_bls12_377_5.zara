@@ -11,8 +11,8 @@ from "EMBED" import snark_verify_bls12_377;
 //     return out;
 // }
 //
-// Save the circuit as "circuit.zok" and run the following commands (in order):
-// $ zarathustra compile -i ./circuit.zok -c bls12_377
+// Save the circuit as "circuit.zara" and run the following commands (in order):
+// $ zarathustra compile -i ./circuit.zara -c bls12_377
 // $ zarathustra compute-witness -a 2 2 2 2
 // $ zarathustra setup -b ark -s gm17
 // $ zarathustra generate-proof -b ark -s gm17

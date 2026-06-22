@@ -146,7 +146,7 @@ mod tests {
                     }
 
                     println!("Testing {:?}", path);
-                    assert_eq!(path.extension().expect("extension expected"), "zok");
+                    assert_eq!(path.extension().expect("extension expected"), "zara");
 
                     let should_error = path.to_str().unwrap().contains("compile_errors");
 
@@ -187,7 +187,7 @@ mod tests {
             };
 
             println!("Testing {:?}", path);
-            assert_eq!(path.extension().expect("extension expected"), "zok");
+            assert_eq!(path.extension().expect("extension expected"), "zara");
 
             let file = File::open(path.clone()).unwrap();
 
@@ -233,7 +233,7 @@ mod tests {
             };
 
             println!("Testing {:?}", path);
-            assert_eq!(path.extension().expect("extension expected"), "zok");
+            assert_eq!(path.extension().expect("extension expected"), "zara");
 
             let file = File::open(path.clone()).unwrap();
 

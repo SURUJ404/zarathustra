@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/neg_pos.zok",
+  "entry_point": "./tests/tests/neg_pos.zara",
   "tests": [
     {
       "input": {

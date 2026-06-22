@@ -122,7 +122,7 @@ Compilation with custom options:
 ```js
 const source = "...";
 const options = {
-  location: "main.zok", // location of the root module
+  location: "main.zara", // location of the root module
   resolveCallback: (currentLocation, importLocation) => {
     console.log(currentLocation + " is importing " + importLocation);
     return {

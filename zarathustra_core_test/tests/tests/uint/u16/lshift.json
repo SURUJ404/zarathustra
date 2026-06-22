@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/uint/u16/lshift.zok",
+  "entry_point": "./tests/tests/uint/u16/lshift.zara",
   "max_constraint_count": 18,
   "tests": [
     {

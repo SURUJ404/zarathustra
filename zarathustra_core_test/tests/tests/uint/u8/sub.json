@@ -1,5 +1,5 @@
 {
-  "entry_point": "./tests/tests/uint/u8/sub.zok",
+  "entry_point": "./tests/tests/uint/u8/sub.zara",
   "max_constraint_count": 51,
   "tests": [
     {

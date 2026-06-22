@@ -20,7 +20,7 @@ nova.params
 running_instance.json
 
 # Zarathustra source files at the root of the repository
-/*.zok
+/*.zara
 
 # snarkjs artifacts
 *.wtns
