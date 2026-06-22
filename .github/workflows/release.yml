@@ -20,9 +20,18 @@ jobs:
           - os: ubuntu-latest
             target: x86_64-unknown-linux-gnu
             artifact: zarathustra-x86_64-unknown-linux-gnu.tgz
+          - os: ubuntu-24.04-arm64
+            target: aarch64-unknown-linux-gnu
+            artifact: zarathustra-aarch64-unknown-linux-gnu.tgz
+          - os: macos-13
+            target: x86_64-apple-darwin
+            artifact: zarathustra-x86_64-apple-darwin.tgz
           - os: macos-latest
             target: aarch64-apple-darwin
             artifact: zarathustra-aarch64-apple-darwin.tgz
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            artifact: zarathustra-x86_64-pc-windows-msvc.tgz
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -36,7 +45,12 @@ jobs:
         run: |
           cargo build --release --locked --target ${{ matrix.target }}
           mkdir -p tmp/pkg
-          cp target/${{ matrix.target }}/release/zarathustra tmp/pkg/
+          if [ -f "target/${{ matrix.target }}/release/zarathustra.exe" ]; then
+            cp target/${{ matrix.target }}/release/zarathustra.exe tmp/pkg/
+          else
+            cp target/${{ matrix.target }}/release/zarathustra tmp/pkg/
+          fi
+        shell: bash
       - name: Package artifacts
         run: |
           cd tmp/pkg
